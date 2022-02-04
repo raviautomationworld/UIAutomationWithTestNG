@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Google Test Suite" >
+    <listeners>
+        <listener class-name="com.testng.utils.listeners.TestListener"/>
+        <listener class-name="com.testng.utils.listeners.AnnotationTransformer"/>
+    </listeners>  
+    <test name="GoogleTest">
+    <groups>
+    <run>
+    <include name="smoke"/>
+    </run>
+    </groups>
+        <classes>
+        	<class name="com.testng.tests.OpenGoogleTests"/>
+        	<class name="com.testng.tests.SearchGoogleTests"/>
+        </classes>
+    </test>
+</suite>
